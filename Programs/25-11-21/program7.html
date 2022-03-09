@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>Registration Form
+</title>
+<style>
+button{
+height:50px;
+width:150px;
+text-align:14px;
+}
+</style>
+</head>
+<body>
+<h1 align="center">AMAL JYOTHI COLLEGE</h1>
+<h3 align="center">Student Registration Form</h3>
+<form style="font-size:20px;text-align:justify;">
+<label for="name">Name:</label>
+<input type="text" name="fname" id="fname" placeholder="Enter Name" style="height:40px;width:500px;"><br><br>
+
+<label for="phone">Mobile Number:</label>
+<input type="text" name="phone" id="phone" placeholder="Enter Mobile Number" style="height:40px;width:455px;"><br><br>
+
+<label for="email">Email id:</label>
+<input type="email" name="email" id="email" placeholder="Enter Email ID" style="height:40px;width:515px;"><br><br>
+
+<label for="password">Password:</label>
+<input type="password" name="password" id="password" placeholder="Enter a Password" style="height:40px;width:512px;"><br><br>
+
+<label for="cpassword"> Confirm Password:</label>
+<input type="password" name="cpassword" id="cpassword" placeholder="Confirm new Password" style="height:40px;width:440px;"><br><br>
+
+<button type="submit" name="submit" style="height:50px;width:200px;" onclick="validateform()">Submit</button>&nbsp;
+<button type="reset" name="reset" style="height:50px;width:200px;">Reset</button>
+</form>
+<script language="javascript" type="text/javascript">
+function validateform(){
+if(document.getElementById("fname").value==""){
+alert("Enter the name");
+}
+if(document.getElementById("phone").value==""){
+alert("Enter the phone number");
+}
+if(document.getElementById("email").value==""){
+alert("Enter email id");
+}
+if(document.getElementById("password").value==""){
+alert("Enter the password");
+}
+if(document.getElementById("cpassword").value==""){
+alert("Reenter the password");
+}
+if(document.getElementById("cpassword").value != document.getElementById("password").value){
+alert("Password doesnot match");
+}
+if(document.getElementById("phone").value>10){
+alert("Phone number is too long");
+}
+}
+</script>
+</body>
+</html>

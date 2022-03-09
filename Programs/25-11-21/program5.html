@@ -1,0 +1,93 @@
+<html> 
+<head>
+<title>Javascript math functions</title>
+<style>
+form{
+align:center;
+}
+input{
+height:50px;
+width:250px;
+}
+button{
+height:50px;
+width:150px;
+text-align:14px;
+}
+.first,.second{
+border:2px solid orange;
+font-size:14px;
+}
+h1{
+text-align:center;
+color:orange;
+font-family:algerian
+}
+</style>
+</head>
+<body>
+<h1>JAVASCRIPT MATH FUNCTIONS</h1>
+<input type="text" id="first" name="first" placeholder="Enter values"/>
+<input type="text" id="second" name="second" placeholder="Enter values"/> 
+<input type="text" id="answer" name="answer"/><br><br>
+<button id="btn" name="btn" onclick="mathp1()">MATH.P1</button>
+<button id="btn1" name="btn1" onclick="mathrnd()">MATH.round</button>
+<button id="btn2" name="btn2" onclick="mathpow()">MATH.pow</button>
+<button id="btn3" name="btn3" onclick="mathsqrt()">MATH.sqrt</button>
+<button id="btn4" name="btn4" onclick="mathabs()">MATH.abs</button>
+<button id="btn5" name="btn5" onclick="mathcell()">MATH.ceil</button>
+<button id="btn6" name="btn6" onclick="mathfloor()">MATH.floor</button>
+<button id="btn7" name="btn7" onclick="mathmin()">MATH.min</button><br><br>
+<button id="btn8" name="btn8" onclick="mathmax()">MATH.max</button>
+<script language="javascript" type="text/javascript">
+function mathp1(){
+document.getElementById("answer").value= Math.PI;
+}
+function mathrnd(){
+var val;
+val=document.getElementById("first").value;
+document.getElementById("answer").value= Math.round(val);
+}
+function mathpow(){
+var val,temp;
+val=document.getElementById("first").value;
+temp=document.getElementById("second").value;
+if(document.getElementById("second").value=="")
+{
+alert("Enter value in second box");
+}
+document.getElementById("answer").value= Math.pow(val,temp);
+}
+function mathsqrt(){
+var val;
+val=document.getElementById("first").value;
+document.getElementById("answer").value= Math.sqrt(val);
+}
+function mathabs(){
+var val;
+val=document.getElementById("first").value;
+document.getElementById("answer").value= Math.abs(val);
+}
+function mathcell(){
+var val;
+val=document.getElementById("first").value;
+document.getElementById("answer").value= Math.ceil(val);
+}
+function mathfloor(){
+var val;
+val=document.getElementById("first").value;
+document.getElementById("answer").value= Math.floor(val);
+}
+function mathmin(){
+var val;
+val=document.getElementById("first").value;
+document.getElementById("answer").value= Math.min(val);
+}
+function mathmax(){
+var val;
+val=document.getElementById("first").value;
+document.getElementById("answer").value= Math.max(val);
+}
+</script>
+</body>
+</html>
